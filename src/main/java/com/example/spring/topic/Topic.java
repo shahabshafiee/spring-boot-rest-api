@@ -1,34 +1,23 @@
-package com.example.course;
+package com.example.spring.topic;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
-//import com.example.topic.Topic;
-
-
-
 @Entity
-public class Course {
+public class Topic {
 	
 	@Id
 	private String id;
 	private String name;
 	private String description;
 	
-//	@Autowired
-//	private Topic topic;
-	
-	public Course() {
+	public Topic() {
+		
 	}
-	
-//	public Course(String id, String name, String description, String topicId) {
-	public Course(String id, String name, String description) {
+	public Topic(String id, String name, String description) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
-//		this.topic=new Topic(topicId, "", "");
 	}
 	public String getId() {
 		return id;
@@ -48,10 +37,4 @@ public class Course {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-//	public Topic getTopic() {
-//		return topic;
-//	}
-//	public void setTopic(Topic topic) {
-//		this.topic = topic;
-//	}
 }
