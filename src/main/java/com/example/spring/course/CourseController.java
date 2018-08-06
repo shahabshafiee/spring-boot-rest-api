@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.spring.topic.Topic;
+
 //import com.example.topic.Topic;
 
 
@@ -30,14 +32,12 @@ public class CourseController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST, value="/topics/{topicId}/courses")
-//	public void addCourse(@RequestBody Course course, @PathVariable String topicId){
 	public void addCourse(@RequestBody Course course, @PathVariable String topicId){
 		course.setTopic(new Topic(topicId, "", ""));
 		courseService.addCourse(course);
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT, value="/topics/{topicId}/courses/{id}")
-//	public void updateCourse(@RequestBody Course course, @PathVariable String topicId, @PathVariable String id){
 	public void updateCourse(@RequestBody Course course, @PathVariable String topicId, @PathVariable String id){
 		course.setTopic(new Topic(topicId, "", ""));
 		courseService.updateCourse(course);

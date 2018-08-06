@@ -3,13 +3,7 @@ package com.example.spring.course;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.example.spring.topic.Topic;
-
-//import com.example.topic.Topic;
-
-
 
 @Entity
 public class Course {
@@ -19,7 +13,6 @@ public class Course {
 	private String name;
 	private String description;
 	
-//	@Autowired
 	private Topic topic;
 	
 	public Course() {
