@@ -1,5 +1,4 @@
-package com.example.spring.course;
-//package com.example.course;
+//package com.example.spring.course;
 //
 //import org.springframework.data.repository.CrudRepository;
 //

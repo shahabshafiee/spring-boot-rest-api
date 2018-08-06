@@ -1,5 +1,4 @@
-package com.example.spring.course;
-//package com.example.course;
+//package com.example.spring.course;
 //
 //import javax.persistence.Entity;
 //import javax.persistence.Id;
